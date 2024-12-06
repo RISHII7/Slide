@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { CheckCircle, MenuIcon } from 'lucide-react'
+import { CheckCircle } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -46,10 +46,10 @@ export default function Home() {
           <div className="container px-4 py-8">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <div className="h-8 w-8 rounded-lg bg-white flex items-center justify-center font-bold">
+                <div className="h-8 w-8 rounded-lg bg-white flex items-center justify-center font-bold text-black">
                   li
                 </div>
-                <span className="text-xl font-semibold text-primary-foreground">
+                <span className="text-xl font-semibold text-white">
                   Slide
                 </span>
               </div>
@@ -58,7 +58,7 @@ export default function Home() {
                 <Link href="#pricing">Pricing</Link>
                 <Link href="#about">About</Link>
               </nav>
-              <Button className="bg-white text-primary">
+              <Button className="bg-white text-black">
                 <Link href="/dashboard">Login</Link>
               </Button>
             </div>
