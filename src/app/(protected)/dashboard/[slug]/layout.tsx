@@ -1,3 +1,4 @@
+import Infobar from "@/components/global/infobar";
 import Sidebar from "@/components/global/sidebar";
 
 type DashboardProps = {
@@ -10,8 +11,12 @@ const DashboardLayout = ({ children, params }: DashboardProps) => {
 
     return (
         <div className="p-3">
+            {/* Sidebar */}
             <Sidebar slug={params.slug} />
-            {children}
+            <div className="lg:ml-[250px] lg:pl-10 lg:py-5 flex flex-col overflow-auto">
+                <Infobar slug={params.slug} />
+                {children}
+            </div>
         </div>
     );
 };
