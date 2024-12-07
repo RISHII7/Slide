@@ -1,4 +1,8 @@
-export const PencilDuoToneBlack = () => {
+type PencilDuoToneBlackProps = {
+    className?: string;
+};
+
+export const PencilDuoToneBlack = ({ className }: PencilDuoToneBlackProps) => {
     return (
         <svg
             width="25"
@@ -6,6 +10,7 @@ export const PencilDuoToneBlack = () => {
             viewBox="0 0 17 16"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className={className}
         >
             <path
                 d="M3.04778 14.1274L6.38538 13.4599C6.64351 13.4083 6.88057 13.2814 7.06671 13.0953L12.4352 7.72676L8.66396 3.95552L3.29547 9.32402C3.10934 9.51015 2.98246 9.74722 2.93084 10.0053L2.26332 13.3429C2.17002 13.8094 2.5813 14.2207 3.04778 14.1274Z"

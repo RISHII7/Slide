@@ -13,7 +13,7 @@ import { Notifications } from "./notifications";
 import Sheet from "../sheet";
 import Items from "../sidebar/items";
 import UpgradeCard from "../sidebar/upgrade";
-import MainBreadCrumb from "../main-bread-crumb";
+import MainBreadCrumb from "../bread-crumbs/main-bread-crumb";
 import ClerkAuthState from "../clerk-auth-state";
 import CreateAutomation from "../create-automation";
 import { SubscriptionPlan } from "../subscription-plan";
