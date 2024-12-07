@@ -9,7 +9,7 @@ type SheetProps = {
 
 const Sheet = ({ children, trigger, className, side }: SheetProps) => {
     return (
-        <ShadcnSheet>
+        <ShadcnSheet >
             <SheetTrigger className={className}>
                 {trigger}
             </SheetTrigger>

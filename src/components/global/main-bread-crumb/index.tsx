@@ -11,7 +11,7 @@ const MainBreadCrumb = ({ page, slug }: MainBreadCrumbProps) => {
             {page === "Home" && (
                 <div className="flex justify-center w-full">
                     <div className="radial--gradient w-4/12 py-5 lg:py-10 flex flex-col items-center">
-                        <p className="text-text-secondary text-lg">
+                        <p className="text-text-secondary text-lg whitespace-nowrap">
                             Welcome back
                         </p>
                         <h2 className="capitalize text-4xl font-medium">
