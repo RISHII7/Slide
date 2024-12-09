@@ -3,9 +3,11 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
 import { ClerkProvider } from '@clerk/nextjs'
-import { ThemeProvider } from "@/providers/theme-provider";
 
 import "./globals.css";
+
+import ReduxProvider from "@/providers/redux-provider";
+import { ThemeProvider } from "@/providers/theme-provider";
 import ReactQueryProvider from "@/providers/react-query-provider";
 
 
@@ -36,9 +38,11 @@ export default function RootLayout({
             defaultTheme="dark"
             disableTransitionOnChange
           >
-            <ReactQueryProvider>
-              {children}
-            </ReactQueryProvider>
+            <ReduxProvider>
+              <ReactQueryProvider>
+                {children}
+              </ReactQueryProvider>
+            </ReduxProvider>
             <Toaster />
           </ThemeProvider>
         </body>
